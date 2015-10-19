@@ -11,6 +11,7 @@ import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 import org.jgroups.JChannel;
 import org.jgroups.Message;
@@ -52,6 +53,13 @@ public class ReplSet<T> extends ReceiverAdapter{
     
     public boolean contains(T obj){
         return set.contains(obj);
+    }
+    
+    public void printall(){
+        for (Iterator<T> it = set.iterator(); it.hasNext(); ) {
+            T f = it.next();
+            System.out.println(f);
+        }
     }
 
     public boolean remove(T obj) throws Exception{
