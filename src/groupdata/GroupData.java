@@ -18,7 +18,19 @@ public class GroupData {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws Exception{
-        testSet();
+        Scanner scn = new Scanner(System.in);
+        
+        System.out.println("DISTRIUTED DATA STRUCTURE TESTING TOOL");
+        System.out.println("--------------------------------------");
+        System.out.println("");
+        System.out.print("Enter 1 to test Stack, enter 2 to test Set\nWhat to test (1 / 2)?");
+        
+        if (scn.nextInt() == 1){
+            testStack();
+        }else{
+            testSet();
+        }
+        
     }
     
     public static void testSet() throws Exception{
@@ -26,7 +38,9 @@ public class GroupData {
         Scanner scn = new Scanner(System.in);
         ReplSet<String> replset = new ReplSet<>("set");
         
-        System.out.println("DISTRIUTED SET TESTING TOOL");
+        System.out.println("SET TESTING TOOL");
+        System.out.println("----------------");
+        System.out.println("Usage: /add <string> /remove <string> /all /exit");
         
         while( !(command = scn.next()).equals("/exit") ) {
             if (command.equals("/add")){
@@ -58,7 +72,9 @@ public class GroupData {
         Scanner scn = new Scanner(System.in);
         ReplStack<String> replstack = new ReplStack<>("stack");
         
-        System.out.println("DISTRIUTED STACK TESTING TOOL");
+        System.out.println("STACK TESTING TOOL");
+        System.out.println("------------------");
+        System.out.println("Usage: /push <string> /pop /top /empty /exit");
         
         while( !(command = scn.next()).equals("/exit") ) {
             if (command.equals("/push")){
