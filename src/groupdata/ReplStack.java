@@ -25,16 +25,6 @@ public class ReplStack<T> extends ReceiverAdapter{
     private JChannel channel;
     private Stack stack;
     
-    private static class DataMessage implements Serializable{
-        public int command;
-        public Object content;
-        
-        DataMessage(int cmd, Object obj){
-            command = cmd;
-            content = obj;
-        }
-    }
-    
     ReplStack(String channelstr) throws Exception{
         stack = new Stack<T>();
         channel = new JChannel();
