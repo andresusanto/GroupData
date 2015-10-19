@@ -102,7 +102,5 @@ public class ReplStack<T> extends ReceiverAdapter{
             stack.clear();
             stack.addAll(list);
         }
-        
-        System.out.println("Stack synchronized");
     }
 }
