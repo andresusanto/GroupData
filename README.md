@@ -58,7 +58,7 @@ There are some tests that I've performed to this project. Followings are the res
 ### Standard Messaging Stack Test
 ![Test Case 1](/../screenshoots/screenshoots/tc1.JPG?raw=true "Test Case 1")
 
-** Scenario: **
+**Scenario:**
 
 1. First client join the group, so did the second client
 2. First client push "Andre" and "Susanto" to stack
@@ -71,7 +71,7 @@ There are some tests that I've performed to this project. Followings are the res
 ### Transfer State Stack Test
 ![Test Case 2](/../screenshoots/screenshoots/tc2.JPG?raw=true "Test Case 2")
 
-** Scenario: **
+**Scenario:**
 
 1. First client push "Berjaya!", "ITB", "HMIF"
 2. Second client push "Buat", "Kita", "Ayo"
@@ -82,7 +82,7 @@ There are some tests that I've performed to this project. Followings are the res
 ### Standard Messaging Set Test
 ![Test Case 3](/../screenshoots/screenshoots/tc3.JPG?raw=true "Test Case 3")
 
-** Scenario: **
+**Scenario:**
 
 1. First client join the group, so did the second client
 2. First client add "Andre" and "Susanto" to set
@@ -97,7 +97,7 @@ There are some tests that I've performed to this project. Followings are the res
 ### Transfer State Set Test
 ![Test Case 4](/../screenshoots/screenshoots/tc4.JPG?raw=true "Test Case 4")
 
-** Scenario: **
+**Scenario:**
 
 1. Third client join the group
 2. Third client print all the set members
